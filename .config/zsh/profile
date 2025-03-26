@@ -6,3 +6,4 @@
 #export TERMINAL="chromium"
 
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+PATH="$PATH:/home/alex/.cargo/bin"
