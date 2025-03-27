@@ -1,4 +1,10 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias :q="echo 'think about what you did for a second'; sleep 5"
-
+alias dc="echo 'think about what you did for a second'; sleep 5"
+alias la='ls -a'
+alias lal='ls -al'
+alias dotvim='nvim ~/dotfiles/'
+alias pacs='pacman -S'
+alias pacr='pacman -Rns'
+alias pacsearch='pacman -Ss'
