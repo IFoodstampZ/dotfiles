@@ -12,3 +12,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 PATH="$PATH:/home/alex/.cargo/bin"
+
+if uwsm check may-start && uwsm select; then
+        exec uwsm start default
+fi
