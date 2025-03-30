@@ -1,10 +1,1 @@
-.config/brasero
-.config/btop
-.config/dconf
-.config/gtk-3.0
-.config/htop
-.config/qBittorrent
-.config/uwsm
-.config/yay
-.config/pavucontrol.ini
-.config/QtProject.conf
+.config/zsh/.zcompdump
