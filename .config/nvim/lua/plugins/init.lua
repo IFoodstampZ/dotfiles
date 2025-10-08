@@ -22,7 +22,7 @@ return {
   {
     "mrcjkb/rustaceanvim",
     --ft = "rust",
-    version = '-5',
+    version = '^6',
     lazy = false,
     -- opts = function ()
       -- return require "configs.rustaceanvim"
