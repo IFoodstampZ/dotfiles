@@ -1,4 +1,4 @@
-alias ls='ls --color=auto'
+alias ls='ls --color'
 alias grep='grep --color=auto'
 alias :q="echo 'think about what you did for a second'; sleep 5"
 alias dc="echo 'think about what you did for a second'; sleep 5"
@@ -8,3 +8,5 @@ alias dotvim="nvim ~/dotfiles/.config/"
 alias pacs='sudo pacman -S'
 alias pacr='sudo pacman -Rns'
 alias pacsearch='sudo pacman -Ss'
+alias ya=yazi
+alias deebg='g++ main.cpp && ./a.out' 

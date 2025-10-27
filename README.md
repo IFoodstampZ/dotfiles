@@ -1,15 +1,23 @@
-# dotfiles
-some basic ass arch linux dotfiles
+# food
 
-# stow
-**use stow to make using these easier!!**
-use stow --adopt . in the dotfiles directory!!
+- *foo dotfiles*
 
-# programs
+## stow
+
+**use gnu stow to make using these easier!!**
+use stow . in the dotfiles directory!! (make sure its in your home folder)
+
+## programs
+
 - **Editor** - NeoVim
 - **Browser** - Firefox
 - **Window Manager** - Hyprland
-- *kinda* **Login Manager** - uwsm
+- **Login Manager** - uwsm
 - **Shell** - zsh
-- **Terminal** - kitty *(wanna try out ghostty tho)*
-- idk
+- **Terminal** - kitty
+- **Multiplexer** - tmux
+
+## wip
+
+- hopefully gonna make a dependency install script for some of the more obscure
+packages used

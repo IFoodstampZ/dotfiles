@@ -3,13 +3,12 @@
   "spacing": 0,
   "height": 0,
   "margin-bottom": 0,
-  "margin-top": 4,
+  "margin-top": -2,
   "position": "top",
-  "margin-right": 370,
-  "margin-left": 370,
+  "margin-right": 200,
+  "margin-left": 200,
   "modules-left": [
     "hyprland/workspaces",
-    "sway/workspaces"
   ],
   "modules-center": [
     "custom/applauncher"
@@ -22,11 +21,6 @@
     "clock"
   ],
   "hyprland/workspaces": {
-    "disable-scroll": true,
-    "all-outputs": false,
-    "tooltip": false
-  },
-  "sway/workspaces": {
     "disable-scroll": true,
     "all-outputs": false,
     "tooltip": false
