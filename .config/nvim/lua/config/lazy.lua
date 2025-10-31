@@ -26,7 +26,12 @@ rtp:prepend(lazypath)
 -- NOTE: Here is where you install your plugins.
 require("lazy").setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
-  "NMAC427/guess-indent.nvim", -- Detect tabstop and shiftwidth automatically
+  {
+    "NMAC427/guess-indent.nvim",
+    config = function()
+      require("guess-indent").setup {}
+    end,
+  }, -- Detect tabstop and shiftwidth automatically
   {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
@@ -95,7 +100,7 @@ require("lazy").setup({
   -- Use the `dependencies` key to specify the dependencies of a particular plugin
   -- lsp shit
   --
-  require "plugins.image",
+  -- require "plugins.image",
   require "plugins.lspshit",
   require "plugins.comp",
   require "plugins.conform",
@@ -193,9 +198,9 @@ require("lazy").setup({
         -- Some languages depend on vim's regex highlighting system (such as Ruby) for indent rules.
         --  If you are experiencing weird indenting issues, add the language to
         --  the list of additional_vim_regex_highlighting and disabled languages for indent.
-        additional_vim_regex_highlighting = { "ruby" },
+        additional_vim_regex_highlighting = { "ruby", "c++" },
       },
-      indent = { enable = true, disable = { "ruby" } },
+      indent = { enable = true, disable = { "ruby", "c++" } },
     },
     -- There are additional nvim-treesitter modules that you can use to interact
     -- with nvim-treesitter. You should go explore a few and see what interests you:

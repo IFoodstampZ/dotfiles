@@ -27,7 +27,7 @@ return {
       { "j-hui/fidget.nvim", opts = {} },
 
       -- Allows extra capabilities provided by blink.cmp
-      'saghen/blink.cmp',
+      "saghen/blink.cmp",
     },
     config = function()
       -- Brief aside: **What is LSP?**
@@ -112,6 +112,10 @@ return {
           -- lua fucking hates this function
 
           -- This function resolves a difference between neovim nightly (version 0.11) and stable (version 0.10)
+          --
+          --
+          --
+          --
           ---@param client vim.lsp.Client
           ---@param method vim.lsp.protocol.Method
           ---@param bufnr? integer some lsp support methods only in specific files
@@ -224,6 +228,7 @@ return {
         --
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
+        markdownlint = {},
         clangd = {},
         lua_ls = {
           -- cmd = { ... },

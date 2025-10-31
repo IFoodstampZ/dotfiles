@@ -4,6 +4,12 @@
 --  Custom
 vim.keymap.set("n", "<leader>x", "<cmd>bd<CR>", { desc = "Buffer Delete" })
 vim.keymap.set("n", "<leader>rc", "<cmd>so ~/.config/nvim/init.lua<CR>", { desc = "[r]eload [c]onfig" })
+vim.keymap.set(
+  "n",
+  "<leader>td",
+  "<cmd>lua vim.diagnostic.enable(not vim.diagnostic.is_enabled())<CR>",
+  { desc = "[t]oggle [d]iagnostics" }
+)
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
